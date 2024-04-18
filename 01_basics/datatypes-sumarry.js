@@ -9,18 +9,18 @@
 const outsidetemp = null;
 let usermail = undefined;
 
-console.log(usermail);
+//console.log(usermail);
 
 //Symbol 
 
 const id = Symbol("123")
 const anotherid = Symbol("123") //  the both values are passed here is same string , nut the result will be different for both of them
 
-console.log(id==anotherid);
+//console.log(id==anotherid);
 
 //bigint
 const bignumber = 234567890123n
-console.log(typeof bignumber);
+//console.log(typeof bignumber);
 
 //console.log(typeof outsidetemp); // output object
 
@@ -31,8 +31,38 @@ const myfunction = function()
 {
     console.log("helloworld");
 }
-console.log(typeof myfunction); // output function but in actually it calls as obj function
+//console.log(typeof myfunction); // output function but in actually it calls as obj function
 
 const heros = ["shaktiman","krrish","flying jat" ];
 
-console.log(typeof heros);// output object
+//console.log(typeof heros);// output object
+
+
+
+
+
+
+
+
+//+++++++++++++++++++++
+
+//stack used in primitive datatypes and heap memory used in non-primitive datatypes
+
+let myyoutubename = "hiteschoudhary.com" //it will go to stack
+
+let anothername = myyoutubename
+anothername = "chaiaurcode"
+
+console.log(myyoutubename); //hiteschoudhary.com
+console.log(anothername);   //chaiaurcode
+
+let userone = {
+    email: "priyanshukashyap024@gmail.com", // object will be allocated in heap
+    upi : "user@ybl"
+}
+let usertwo = userone
+
+usertwo.email = "hitesh@gmail.com"
+
+console.log(userone.email);
+console.log(usertwo.email);
