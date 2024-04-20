@@ -1,12 +1,12 @@
 //objects singleton
 
 //creating object 2 type
-const tinder = {} //non - singleton object
-const tinderuser = new Object() //singleton object
+const tinderuser = {} //non - singleton object
+const tinder = new Object() //singleton object
 
-tinder.id = "123abc"
-tinder.name = "Sammy"
-tinder.isLoggedIn = false
+tinderuser.id = "123abc" 
+tinderuser.name = "Sammy"
+tinderuser.isLoggedIn = false
 
 // console.log(tinder);
 // console.log(tinderuser);
@@ -20,7 +20,7 @@ const regularuser = {
         }
     }
 }
-console.log(regularuser.fullnames.userfullname.firstname); //for accessing objects in objects
+//console.log(regularuser.fullnames.userfullname.firstname); //for accessing objects in objects
 
 //for combining the objects
 const obj1 = {1: "a",
@@ -45,5 +45,59 @@ const obj4 = {
 //console.log(obj3); //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } } ->the object is binded inside the object
 
 
-const obj3 ={...obj1, ...obj2} //spread operator
-console.log(obj3);
+//const obj3 ={...obj1, ...obj2} //spread operator
+//console.log(obj3);
+
+const users = [ //the value comes from databse
+  {
+    id :1,
+    email : 'ppeoei@gmail.com'
+  },
+  {
+    id :1,
+    email : 'ppeoei@gmail.com'
+  },
+  {
+    id :1,
+    email : 'ppeoei@gmail.com'
+  }
+]
+//console.log(users[1].email); 
+
+//console.log(tinderuser);
+//  console.log(Object.keys(tinderuser));
+//  console.log(Object.values(tinderuser));
+//  console.log(Object.entries(tinderuser));
+
+//  console.log(tinderuser.hasOwnProperty('isloggedin'));
+
+
+ //+++++++ objects destructuring and json api
+
+ const course = {
+  coursename : "js in hindi",
+  price : "999",
+  courseinst: "priyanshu"
+ }
+ 
+ //console.log(course.courseinst);
+
+ //const {courseinst}   = course
+
+ //console.log(courseinst);
+ const {courseinst : inst}   = course
+
+ console.log(inst);
+
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",  //json format api
+//     "price": "free"
+// }
+
+[
+  {},
+  {},
+  {}
+]
