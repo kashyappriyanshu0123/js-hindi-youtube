@@ -1,3 +1,4 @@
+/*
 const month = 3
 switch (month) {
     case 1:
@@ -16,5 +17,27 @@ switch (month) {
 
     default:
         console.log("default are match");
+        break;
+}
+*/
+
+const month = "march"
+
+switch (month) {
+    case "jan":
+        console.log("January");
+        break;
+    case "feb":
+        console.log("feb");
+        break;
+    case "march":
+        console.log("march");
+        break;
+    case "april":
+        console.log("april");
+        break;
+
+    default:
+        console.log("default case match");
         break;
 }
