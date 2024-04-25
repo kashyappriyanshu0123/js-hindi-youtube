@@ -9,11 +9,11 @@
 
 const greetings1 = ["hello world!"]
 
-for (const val of greetings1) {
+// for (const val of greetings1) {
     
-    console.log(`each char is ${val}`);
+//     console.log(`each char is ${val}`);
     
-}
+// }
 
 // remove the space
 
@@ -46,6 +46,30 @@ for (const val of greetings1) {
 //Maps -> Maps is object in itself in js everything is object
 
 const map = new Map()
+map.set('USA' , "United states of america")
+map.set('IN',"INDIA")
+map.set('Fr' , "France")
+
+console.log(map);
+
+// FOR OF LOOP +++++++++++++++++
+for(const [key,value] of map)       //USA :- United states of america
+                                   //  IN :- INDIA
+                                    // Fr :- France
+{
+   // console.log(key,':-',value); 
+}
 
 
+//can i apply for of loop to object?
 
+const myobj = {
+    game1: "nfs",
+    game2 : "spider-man"
+}
+
+
+// for (const [key,value] of myobj) {
+//     console.log(key, ':-' , value);  //its not iterable on myobj it's throwing error(for of loop won't work for iterating object)
+    
+// }
