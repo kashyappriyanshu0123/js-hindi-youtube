@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("priyanshu");
+    // },2000)
+
+    //UP AND DOWN BOTH WILL PRINT PRIYANSHU 
+
+    // const sayhitesh = function(){        
+    //     console.log("priyanshu");
+    // }
+    
+  
+   // setTimeout(sayhitesh,2000 ) //take reference sayhitesh is a reference if i take sayhitesh() then it will get executed instantly 
+
+  //   document.querySelector('h1').innerHTML = "best js series"
+  const show = function(){
+   document.querySelector('h1').innerHTML = "best js series";
+  }
+
+  const changeme = setTimeout(show,2000)
+
+ //clearTimeout(changeme) // clear timeout needs reference that's why we need to declared set timeout in variable
+
+
+  document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme)
+    console.log("stopped");
+
+  })
+</script>
+</html>
