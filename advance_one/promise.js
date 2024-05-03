@@ -88,7 +88,7 @@ try {
 } 
 consumefive()
 
-//both are same async await and .then
+//both are same async await and .then , (.catch)
 
 // async function getallusers(){
 //     try {
