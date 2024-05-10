@@ -10,5 +10,22 @@ accountcity = "bengalluru"
 
 
 console.log(accountemail);
-
+console.log(accountstate)
 console.table([accountid,accountemail,accountpassword,accountcity,accountstate]);
+
+const a = 6
+console.log(a);
+
+// a = 8  //it will throw an error
+// console.log(a); 
+
+let b = 7
+//console.log(b);
+
+b = 9
+console.log(b); //this will not
+
+let c;
+c = 90
+
+console.log(c);
