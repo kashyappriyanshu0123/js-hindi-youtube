@@ -14,28 +14,29 @@ let usermail = undefined;
 //Symbol 
 
 const id = Symbol("123")
-const anotherid = Symbol("123") //  the both values are passed here is same string , nut the result will be different for both of them
+const anotherid = Symbol("123") //  the both values are passed here is same string , not the result will be different for both of them
 
-//console.log(id==anotherid);
+console.log(id==anotherid);
 
-//bigint
+//Bigint
+
 const bignumber = 234567890123n
-//console.log(typeof bignumber);
+console.log(typeof bignumber); //bigint
 
-//console.log(typeof outsidetemp); // output object
 
-//referencen(non - prmitive datatypes)
+
+//reference(non - prmitive datatypes)
 
 //Array , object , functions -> these non-primitive data type return type are object
 const myfunction = function()
 {
     console.log("helloworld");
 }
-//console.log(typeof myfunction); // output function but in actually it calls as obj function
+//console.log(typeof myfunction); // output :function but in actually it calls as obj function
 
 const heros = ["shaktiman","krrish","flying jat" ];
 
-//console.log(typeof heros);// output object
+console.log(typeof heros);// output: object
 
 
 
@@ -58,8 +59,13 @@ console.log(anothername);   //chaiaurcode
 
 let userone = {
     email: "priyanshukashyap024@gmail.com", // object will be allocated in heap
-    upi : "user@ybl"
+    upi : "user@ybl",
+    password:123
+    
 }
+
+
+console.log(userone);
 let usertwo = userone
 
 usertwo.email = "hitesh@gmail.com"
