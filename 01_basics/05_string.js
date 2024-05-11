@@ -30,12 +30,16 @@ console.log(newstringone.trim()); //it will remove the spaces
 const url = "https://hitesh.com.hitesh%20choudhary"
 console.log(url.replace('%20' , '-')); //replace : learn the methods learn about split and include method
 
+//+++++My practise
+
 console.log(url.replace("hitesh.com" , "kashyap.com"));
 
-// const onestring = "kashyap"
+const onestring = "kashyap"
 
-// console.log(onestring);
+console.log(onestring);
 
-// console.log(`my surname is ${onestring.toLocaleUpperCase()} and i want the whole world `);
+console.log(`my surname is ${onestring.toLocaleUpperCase()} and i want the whole world `);
 
-// console.log(onestring.charAt(2));
+console.log(onestring.charAt(2));
+
+console.log(onestring.indexOf('k'));
