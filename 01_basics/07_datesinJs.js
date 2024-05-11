@@ -7,7 +7,7 @@ let mydate = new Date()
 // console.log(mydate.toISOString);//[Function: toISOString]
 //  console.log(mydate.toJSON());  //2024-04-19T10:34:31.234Z 
 //  console.log(mydate.toLocaleString());    //4/19/2024, 10:34:31 AM
-//  console.log(mydate.toLocaleDateString());  //4/19/2024
+ console.log(mydate.toLocaleDateString());  //4/19/2024
 
  //creating date
 
@@ -26,3 +26,8 @@ let mydate = new Date()
 let newDate = new Date()
 console.log(newDate);
 console.log(newDate.getMonth()+ 1);
+
+
+let my = new Date()
+console.log(my);
+console.log(myTimeStamp);
