@@ -8,8 +8,8 @@ tinderuser.id = "123abc"
 tinderuser.name = "Sammy"
 tinderuser.isLoggedIn = false
 
-// console.log(tinder);
-// console.log(tinderuser);
+console.log(tinder);
+console.log(tinderuser);
 
 const regularuser = {
     email : "priyanshukashyap.com",
@@ -20,7 +20,8 @@ const regularuser = {
         }
     }
 }
-//console.log(regularuser.fullnames.userfullname.firstname); //for accessing objects in objects
+
+console.log(regularuser.fullnames.userfullname.firstname); //for accessing objects in objects
 
 //for combining the objects
 const obj1 = {1: "a",
@@ -55,14 +56,14 @@ const users = [ //the value comes from databse
   },
   {
     id :1,
-    email : 'ppeoei@gmail.com'
+    email : 'pkas.com'
   },
   {
     id :1,
     email : 'ppeoei@gmail.com'
   }
 ]
-//console.log(users[1].email); 
+console.log(users[1].email); 
 
 //console.log(tinderuser);
 //  console.log(Object.keys(tinderuser));
