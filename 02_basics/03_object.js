@@ -5,7 +5,7 @@
 
 const mySym = Symbol("key1") // declaring symbol
 
-const jsuser = {
+const jsuser = {  //jsuser is a object
     name : "priyanshu",
     "full name" : "priyanshu kashyap" ,// there is no way i can access it through (.) i have to access through brackets only
     [mySym]: "mykey1", //we have to put the key in bracket for refering the Symbol -> if it's not in bracket then its string
