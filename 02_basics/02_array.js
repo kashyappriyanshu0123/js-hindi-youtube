@@ -1,11 +1,13 @@
 const marvel = ["thor" , "ironman" , "spiderman"]
 const dc_heros = ["superman","batman","flash"] // it's the 4th element if we are pushing it in marvel array
 
-//marvel.push(dc_heros);
-//console.log(marvel);
+marvel.push(dc_heros);
+console.log(marvel);
 
-const allheros = marvel.concat(dc_heros)
-console.log(allheros);
+// const allheros = marvel.concat(dc_heros)
+// console.log(allheros);
+
+
 
 
 const all_new_heros = [...marvel, ...dc_heros] //spread 
