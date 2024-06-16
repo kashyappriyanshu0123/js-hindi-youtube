@@ -1,10 +1,10 @@
-const name = "priyanshu"
+const name = "PrIyanshu"
 const repcount = 50
 
 console.log(name + repcount);
 console.log(`hello my name is ${name.toUpperCase()} and my repo count is ${repcount}`); //we can also add method here as we added toupper
 
-console.log(`hey my name is ${name.toUpperCase} and my reocount is : ${repcount}`);
+console.log(`hey my name is ${name.toLowerCase()} and my reocount is : ${repcount}`);
 const gamename = new String("hitesh-hc")
 
 console.log(gamename[0]); //for accessing the 0th key
@@ -12,6 +12,9 @@ console.log(gamename.__proto__);
 
 console.log(gamename.charAt(2));
 console.log(gamename.indexOf('i'));
+
+const str = "kashyap"
+console.log(str.charAt(2));
 
 const newstring = gamename.substring(0,4)
 console.log(newstring);
