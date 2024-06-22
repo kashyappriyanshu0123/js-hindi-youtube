@@ -16,12 +16,12 @@ let usermail = undefined;
 const id = Symbol("123")
 const anotherid = Symbol("123") //  the both values are passed here is same string , not the result will be different for both of them
 
-console.log(id==anotherid);
+// console.log(id==anotherid);
 
 //Bigint
 
 const bignumber = 234567890123n
-console.log(typeof bignumber); //bigint
+//console.log(typeof bignumber); //bigint
 
 
 
@@ -32,13 +32,20 @@ const myfunction = function()
 {
     console.log("helloworld");
 }
-//console.log(typeof myfunction); // output :function but in actually it calls as obj function
+console.log(typeof myfunction); // output :function but in actually it calls as obj function
 
 const heros = ["shaktiman","krrish","flying jat" ];
 
 console.log(typeof heros);// output: object
 
 
+//My practise
+
+function jaipur() {
+    console.log('hello wolrd');
+    
+}
+console.log(jaipur());
 
 
 
