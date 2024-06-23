@@ -2,27 +2,39 @@ const score = 400
 console.log(score);
 
 const balance = new Number(1000)
-//console.log(balance);
+console.log(balance);
 
-//console.log(balance.toString()); //-> 1000
-// console.log(typeof balance); //object
-// console.log(balance.toFixed(4));
+console.log(balance.toString());  //-> 1000
+console.log(typeof balance);      //object
+console.log(balance.toFixed(4));
+console.log(balance.toString().length);
 
 const othernumber = 123.8966
-//console.log(othernumber.toPrecision(3));
+//console.log(othernumber.toPrecision(4));
+
+
+let text = new String("Hello World!");
+let result = text.toString();
+console.log(typeof text);
+
+const a = "abc"
+console.log(typeof a);
+
+const hundred = 1000000
+console.log(hundred.toLocaleString('en-IN'));
 
 
 //+++++++++++++ Maths +++++++++++++++++++
 
 //maths library comes with js by default
 
-console.log(Math);
-console.log(Math.abs(-4));
-console.log(Math.round(4.6));
-console.log(Math.ceil(4.3));
-console.log(Math.floor(4.92));
-console.log(Math.max(4,5,1,8,3));
-console.log(Math.min(4,5,13,6,7));
+// console.log(Math); //Math library is a object comes with alot of properties
+// console.log(Math.abs(-4));
+// console.log(Math.round(4.6));
+// console.log(Math.ceil(4.3));
+// console.log(Math.floor(4.92));
+// console.log(Math.max(4,5,1,8,3));
+// console.log(Math.min(4,5,13,6,7));
 
 
 
