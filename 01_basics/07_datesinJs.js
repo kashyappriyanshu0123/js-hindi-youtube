@@ -25,16 +25,21 @@ console.log(myTimeStamp); //1719160045973 => Value in millisecond
 
 let newDate = new Date()
 console.log(newDate);
-console.log(newDate.getMonth()+ 1);
-
+console.log(newDate.getMonth()+1);
+console.log(newDate.getDay());
+console.log(newDate.getFullYear());
+console.log(newDate.toLocaleString('default',{
+    weekday:"long",
+   
+}))
 
 let my = new Date()
-console.log(my);
-console.log(myTimeStamp);
+// console.log(my);
+// console.log(myTimeStamp);
 
 
 let d = new Date()
-console.log(d.toLocaleString('en-IN',{timeZone: 'Asia/Kolkata'})); //for IST => 'en-IN' specifies the locale for India (English in India).
+//console.log(d.toLocaleString('en-IN',{timeZone: 'Asia/Kolkata'})); //for IST => 'en-IN' specifies the locale for India (English in India).
                                                                    //{ timeZone: 'Asia/Kolkata' } specifies the time zone for Indian Standard Time (IST) 
 
 
