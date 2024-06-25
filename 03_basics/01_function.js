@@ -51,6 +51,8 @@
 // console.log("res:" , res);        //res: 7
 
 
+
+
 // function addtwonumbers(number1,number2) {
 //     let result = number1 + number2
 //  return result
