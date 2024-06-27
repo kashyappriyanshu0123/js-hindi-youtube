@@ -15,7 +15,7 @@ const jsuser = {  //jsuser is a object
     isloggedin : "false",
     lastlogindays : ["Monday" , "Tuesday"],
     myth : function(){
-        console.log(`everything is all about ${this.age}` );
+        console.log(`everything is all about ${this.age}` );  //for refering the same object we use this by using this.we can access the properties of js user or same object
 
     }
 
