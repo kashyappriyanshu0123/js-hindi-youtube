@@ -1,11 +1,11 @@
 // if
-const isUserloggedIn = true
+const isUserloggedIn = false
 const temperature = 41
 
 // if ( temperature === 40 ){
 //     console.log("less than 50");
 // } else {
-//     console.log("temperature is greater than 50");
+//     console.log("temperature is greater than 40");
 // }
 
 // console.log("Execute");
@@ -17,15 +17,17 @@ if(score > 100)
 {
     const power = "fly"
     console.log(`Use power : ${power}`);
+   
 }
-//.log(`Use power : ${power}`); //it will throw error because power is defined inside the if block
+
+//console.log(`Use power : ${power}`); //it will throw error because power is defined inside the if block
 
 
 
 
-//const balance = 1000
+// const balance = 1000
 
-//if(balance >= 500) console.log("test"),console.log("test2");
+//  //if(balance >= 500) console.log("test"),console.log("test2");  //the code is not more readable here
 
 // if(balance < 500)
 // {
@@ -58,3 +60,26 @@ if(loggedinfromgoogle || loggedinfromemail)
 {
     console.log("user logges in");
 }
+
+
+
+
+
+////+++++My practise++++++++++++++
+
+// if(true)
+//     {
+//         var c= 30
+//         console.log(c);
+//         let a = 20
+//         console.log(a);
+//         let b;
+//         b=10
+//         b =1000
+//     console.log(b);
+//     }
+//     var c=300
+// console.log(c);
+
+// let a = 100
+// console.log(a);
