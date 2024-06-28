@@ -20,8 +20,13 @@
 
 
 
-let score = 1
+let score = 11 
 do {
-    console.log(`score is ${score}`);
+    console.log(`score is ${score}`); // first 11 will get printed then afterwards condition will get checked
     score++
 } while (score <= 10);
+
+
+
+
+
