@@ -15,13 +15,21 @@ const othernumber = 123.8966
 
 let text = new String("Hello World!");
 let result = text.toString();
-console.log(typeof text);
+console.log(typeof result);
 
-const a = "abc"
-console.log(typeof a);
+// let se = new String("kashyap");
+// console.log(se);
+// let res = se.toString();
+// console.log(typeof res);
 
-const hundred = 1000000
-console.log(hundred.toLocaleString('en-IN'));
+
+
+
+// const a = "abc"
+// console.log(typeof a);
+
+// const hundred = 1000000
+// console.log(hundred.toLocaleString('en-IN'));
 
 
 //+++++++++++++ Maths +++++++++++++++++++
