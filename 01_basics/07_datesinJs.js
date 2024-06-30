@@ -11,15 +11,15 @@ let mydate = new Date()
 
  //creating date
 
- let myCreateddate = new Date(2023,0,23)
- console.log(myCreateddate.toDateString());  //Mon Jan 23 2023
+//  let myCreateddate = new Date(2024,5,30)
+//  console.log(myCreateddate.toDateString());  // Sun Jun 30 2024
  
- let myCreateddate1 = new Date("2023-01-13") //Syntax is YY-MM-DD
- console.log(myCreateddate.toLocaleString()); //1/23/2023, 12:00:00 AM
+//  let myCreateddate1 = new Date("2023-01-13") //Syntax is YY-MM-DD
+//  console.log(myCreateddate.toLocaleString()); //1/23/2023, 12:00:00 AM
  
  let myTimeStamp = Date.now()
 
-console.log(myTimeStamp); //1719160045973 => Value in millisecond
+// console.log(myTimeStamp); //1719160045973 => Value in millisecond
 // console.log(myCreatedDate.getTime());  //bcoz this date is a obj we can use methods , what's gettime method() //w3 school(reference)
 //console.log(Math.floor(Date.now()/1000));
 
