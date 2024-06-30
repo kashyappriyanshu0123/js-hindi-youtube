@@ -1,6 +1,6 @@
-let score = "33ab" //variable name score assigning value 33
+let score = "33ab" //variable name score assigning value 33ab
 let a = null;
-
+console.log(score);
 //console.log(typeof score); //both are same
 
 //console.log(typeof(score)); //this score is a method
@@ -10,7 +10,7 @@ console.log(typeof(valueInNumber));
 
 //console.log(valueInNumber);
 
-//console.log(a);
+console.log(a);
 
 //33 => 33
 //"33abc" => Nan
