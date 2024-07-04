@@ -6,9 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Chai aur code</h1>
-    <button id="stop">Stop</button>
-    
+  <h1>Chai aur code</h1>
+  <button id="stop">Stop</button>
 </body>
 <script>
     // setTimeout(function(){
@@ -17,27 +16,28 @@
 
     //UP AND DOWN BOTH WILL PRINT PRIYANSHU 
 
-    // const sayhitesh = function(){        
-    //     console.log("priyanshu");
-    // }
-    
+  //   const saypriyanshu = function(){
+  //     console.log("kashyap naam hai humara");
+  //   }
   
-   // setTimeout(sayhitesh,2000 ) //take reference sayhitesh is a reference if i take sayhitesh() then it will get executed instantly 
+  //  setTimeout(saypriyanshu,2000 ) // take reference sayhitesh is a reference if i take sayhitesh() then it will get executed instantly 
 
   //   document.querySelector('h1').innerHTML = "best js series"
-  const show = function(){
-   document.querySelector('h1').innerHTML = "best js series";
-  }
+
+ const show = function(){
+  document.querySelector('h1').innerHTML ="best js series";
+ }
+//     setTimeout(show,2000)
 
   const changeme = setTimeout(show,2000)
 
- //clearTimeout(changeme) // clear timeout needs reference that's why we need to declared set timeout in variable
+// clearTimeout(changeme) // clear timeout needs reference that's why we need to declared set timeout in variable
 
 
   document.querySelector('#stop').addEventListener('click',function(){
     clearTimeout(changeme)
     console.log("stopped");
 
-  })
+   })
 </script>
 </html>
