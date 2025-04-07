@@ -79,3 +79,6 @@ usertwo.email = "hitesh@gmail.com"
 
 console.log(userone.email);
 console.log(usertwo.email);
+
+let age = null
+console.log(typeof age);
