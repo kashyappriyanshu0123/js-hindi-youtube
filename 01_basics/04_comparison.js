@@ -9,3 +9,5 @@ console.log(null > 0);
 
 console.log("2" === 2); //it will be checked strictly 
 console.log("2" == 2);
+
+console.log(undefined >0);
