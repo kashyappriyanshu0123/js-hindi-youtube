@@ -35,7 +35,7 @@ const url = "https://hitesh.com.hitesh%20choudhary"
 console.log(url.replace('%20' , '-')); //replace : learn the methods learn about split and include method
 
 console.log(url.includes('hitesh'));
-console.log(gamename.split('-'));
+console.log(gamename.split('-'));   //   The split() method splits a string into an array of substrings.
 
 
 //+++++My practise
@@ -53,3 +53,35 @@ console.log(gamename.split('-'));
 // console.log(onestring.indexOf('k'));
 
 // console.log(`my surname is  kashyap and i am learning from ${gamename}`);
+
+
+
+
+
+//++++++++++++++   NEW Practise session
+
+const string = new String('chiku-ch')
+
+console.log(string[0]);
+console.log(string.length);
+console.log(string.toUpperCase());
+
+
+console.log(string);
+console.log(string.charAt(2));
+
+const fr = string.substring(0,4) // 4th character will not get included
+console.log(fr);
+
+const fr1 = string.slice(-6,4)
+console.log(fr1);
+
+const fr2 = "    kashyap     "
+
+console.log(fr2);
+console.log(fr2.trimStart());
+
+const naming = "fateh bahadur singh"
+
+
+console.log(`he was my hero ${naming.toUpperCase()} `);
