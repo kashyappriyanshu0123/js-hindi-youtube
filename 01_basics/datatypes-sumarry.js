@@ -76,9 +76,12 @@ console.log(userone);
 let usertwo = userone
 
 usertwo.email = "hitesh@gmail.com"
+usertwo.password = 456
 
 console.log(userone.email);
 console.log(usertwo.email);
+console.log(usertwo.password);
+
 
 let age = null
 console.log(typeof age);
