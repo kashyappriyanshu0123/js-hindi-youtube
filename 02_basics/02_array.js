@@ -1,7 +1,7 @@
 const marvel = ["thor" , "ironman" , "spiderman"]
 const dc_heros = ["superman","batman","flash"] // it's the 4th element if we are pushing it in marvel array
 
-// marvel.push(dc_heros);
+// marvel.push(dc_heros);  // push method  will push in the existing array
 // console.log(marvel);
 
 // const allheros = marvel.concat(dc_heros)
