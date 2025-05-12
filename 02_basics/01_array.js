@@ -33,18 +33,19 @@ const myarr2 = new Array(1,2,3,4,5,"kashyap")
 // console.log(myarr);
 
 // console.log(myarr.includes(9));
-// console.log(myarr.indexOf(4));
 
-const newarr = myarr.join() //join will convert the array into string (go through this topic)
+//  console.log(myarr.indexOf(4));  // return index position of the element
 
-console.log(myarr);
-console.log(newarr);
-console.log(typeof newarr);
+// const newarr = myarr.join() //join will convert the array into string (go through this topic)
+
+// console.log(myarr);
+// console.log(newarr);
+// console.log(typeof newarr);
  
 
 //slice ,splice
 
- console.log("A ", myarr);
+console.log("A ", myarr);
 
 const myn1 = myarr.slice(0, 3)
 
@@ -52,7 +53,7 @@ console.log(myn1);  //the values after using slice method
 console.log(`B original ${myarr} it got changed`);     //the original array : B  [ 2, 3, 4, 5, 6 ]
 
 
-const myn2 = myarr.splice(1, 3)
+const myn2 = myarr.splice(1, 3)  // after using splice [3,4,5] these elements will get removed from the original array
 
 console.log("C ", myarr); // the original array gets manipulated after using splice o/p : C  [ 2, 6 ]
 console.log(myn2); //from array the splice o/p get removed splice o/p :[3,4,5] after splice o/p : [2,6]
