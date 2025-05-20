@@ -16,7 +16,7 @@ tinder.rollno = 123
 
 const regularuser = {
     email : "priyanshukashyap.com",
-    fullnames : {
+    fullnames : { // fullname is also an object so as username
         userfullname : {
             firstname : "priyanshu",
             lastname : "kashyap"
@@ -49,8 +49,8 @@ const obj4 = {
 // const obj3 = {obj1 , obj2}
 // console.log(obj3);              //   { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } } ->the object is binded inside the object
 
-// const obj3 = Object.assign(obj1,obj4)
-// console.log(obj3);
+const obj3 = Object.assign(obj1,obj4)
+console.log(obj3);
 
 //const obj3 ={...obj1, ...obj2} //spread operator
 //console.log(obj3);
@@ -65,19 +65,19 @@ const users = [ //the value comes from databse
     email : 'pkas.com'
   },
   {
-    id :1,
-    email : 'ppeoei@gmail.com'
+    id :2,
+    email : 'kashyap.com'
   }
 ]
 console.log(users[1].email);  // =>  [] we are using brackets because we binded the object in the array 
-console.log(users[2].id);
+console.log(users[2].email);
 
-//console.log(tinderuser);
+console.log(tinderuser);
 //  console.log(Object.keys(tinderuser));
 //  console.log(Object.values(tinderuser));
 //  console.log(Object.entries(tinderuser));
 
- console.log(tinderuser.hasOwnProperty('isloggedin'));
+ console.log(tinderuser.hasOwnProperty('isLoggedIn'));
 
 
  //+++++++ objects destructuring and json api
@@ -88,15 +88,19 @@ console.log(users[2].id);
   courseinst: "priyanshu"
  }
  
- //console.log(course.courseinst);
+//  console.log(course.courseinst);
+
 
  //const {courseinst}   = course
+//console.log(courseinst);
 
- //console.log(courseinst);
+
  const {courseinst : inst}   = course
+
 
  console.log(inst);
 
+ 
 
 // {
 //     "name": "hitesh",
