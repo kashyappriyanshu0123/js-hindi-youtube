@@ -42,12 +42,14 @@
 // function addtwonumbers(number1,number2) {
 //     let result = number1 + number2
 //      console.log("kashyap");
-//     return result
+//     //return result
     
 //  return number1 + number2       //both are same
+//  //  console.log("kashyap"); => this will show unreachable code detected
+ 
 // }
 
-//const res = addtwonumbers(3,4)
+// const res = addtwonumbers(3,4)
 // console.log("res:" , res);        //res: 7
 
 
@@ -123,9 +125,9 @@
 
 
 
-// function calculatedprice(val1 ,val2 , ...num1){
+// function calculatedprice(val1 ,val2 , ...num1){   val1 & val2 will have the value 100,200 and num1 will have 400,500
  
-//     return num1
+//     return num1    
 
 // }
 // console.log(calculatedprice(100,200,400,500));    //o/p: [ 400, 500 ]
@@ -140,15 +142,21 @@
     prices: 199
 }
 
-function handleObject(anyobject){    //i took anyobject in the parameter here because  i want to be it generic , means  now i can  pass anyobject in here
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);   //function dosent what will come first (username,price) it will decide with the help of method that's anyobject
+function handleObject(anyobject){    //i passed anyobject in the parameter here because  i want to be it generic , means  now i can  pass anyobject in here
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);   //function dosent know what will come first (username,price) it will decide with the help of method that's anyobject
 }
-handleObject(user)
+
+//handleObject(user)
+
+handleObject({
+    username: "hero",
+    prices: 499
+})
 
 // const mynewarray = [200,400,500,1000]
 
 // function returnsecondvalue(getarray){
-//     return getarray[1] //we have to keep in mind what parameter is here and we will return that myarray is genericname it can be anything 
+//     return getarray[1] //we have to keep in mind what parameter is here and we will return that myarray is generic name it can be anything 
 // }
 
 // console.log(returnsecondvalue(mynewarray));
@@ -157,11 +165,21 @@ const myarr = [100,3,41,332]
 
 
 function returnfirstvalue(changedarr) {
-    return changedarr[0] 
+    return changedarr[0]   //generic name means?
 }
 function returnthirdvalue(changedarr) {
     return changedarr[2] 
 }
+function returnsecondvalue(changedarr){
+    return changedarr[1]
+}
+
 
 console.log(returnfirstvalue(myarr));
 console.log(returnthirdvalue(myarr));
+console.log(returnsecondvalue(myarr));
+
+
+
+
+
