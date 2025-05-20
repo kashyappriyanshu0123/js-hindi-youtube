@@ -1,9 +1,11 @@
-let a = 300
+let c = 300
 if(true)
 {
     let a =10
     const b=20
    // console.log("inner" , a); //inner 10
+  // console.log(c);
+   
 }
 //console.log(a);  // 300
 
@@ -29,7 +31,7 @@ if(true)
 //     // console.log(website); //->it will give error if we run it because it's out of the scope 
 //    two() 
 // }
-//    // two() // => it will throw an error if we call two outside the scope 
+//   // two() // => it will throw an error if we call two outside the scope 
 // one()
 
 
@@ -59,13 +61,17 @@ if(true)
 
 
 
-//console.log(addone(5)) // -> this is valid we can call  the function before declaring it
+console.log(addone(5)) // -> this is valid we can call  the function before declaring it
 
 function addone(num){
     return num + 1 
+    
 }
 
 addone(4)      // the value is returned only , it's not get printed
+
+
+
 
 //addTwo(5) //i can't write this before declaring the function (it's kept in the variable that's why it's not valid)
 
