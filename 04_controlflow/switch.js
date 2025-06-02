@@ -9,7 +9,7 @@ switch (month) {
         break;
     case 3:
         console.log("march");
-       // break;                  //if we dont use break it will break the control flow means april will also get executed in this example and so one if any other instruction is there
+       // break;                  //if we dont use break it will break the control flow means april will also get executed in this example and so on if any other instruction is there
     case 4:
         console.log("APRIL");
         break;
@@ -32,7 +32,7 @@ switch (month) {
         break;
     case "march":
         console.log("march");
-        break;
+
     case "april":
         console.log("april");
         break;
