@@ -24,7 +24,7 @@
 
 // const newnums = mynums.filter( (num) => 
 // {      
-//   num > 4                         //if i'm using this scope or opening this scope then i have to return it
+//   num > 4                         //if i'm using this  scope {} or opening this scope then i have to use return keyword 
 //   //  return num > 4                  
 // })
 // console.log(newnums);       
@@ -32,42 +32,43 @@
 
 
 
-//const mynums = [1,2,3,4,5,6,7,8,9,10]
-
-// const newNums = []
-
-// mynums.forEach( (num) => {
-//     if (num > 4) {
-//         newNums.push(num)
-//     }
-// } )
-
-// console.log(newNums);
+const mynums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
+const newnums = []
+
+mynums.forEach((num) => {
+   if (num > 4) {
+      newnums.push(num)
+   }
+   // console.log(newnums);
+
+})
+
+console.log(newnums);
 
 
 const books = [
-    { title : 'Book one' , genre : 'fiction' , publish : 1981, edition : 2004},
-    { title : 'Book two' , genre : 'non - fiction' , publish : 1992 , edition : 2008},
-    { title : 'Book Three' , genre : 'History' , publish : 1999 , edition : 2013},
-    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
-    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
-    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
-    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
-    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
-    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
-  ];
+   { title: 'Book one', genre: 'fiction', publish: 1981, edition: 2004 },
+   { title: 'Book two', genre: 'non - fiction', publish: 1992, edition: 2008 },
+   { title: 'Book Three', genre: 'History', publish: 1999, edition: 2013 },
+   { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+   { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+   { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+   { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+   { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+   { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+];
 
- // const userbooks = books.filter( (bk) => bk.genre === 'History')   // the object which is coming from array we named it bk
+// const userbooks = books.filter( (bk) => bk.genre === 'History')   // the object which is coming from array we named it bk
 
- // console.log(userbooks);
+// console.log(userbooks);
 
- const userbooks = books.filter((bk) =>  {
-    return bk.publish>=2000
- })
-console.log(userbooks);
+// const userbooks = books.filter((bk) => {
+//    return bk.publish >= 2000
+// })
+// console.log(userbooks);
 
 //   const userbooks1 = books.filter( (bok) => bok.publish > 2000 )
 // console.log(userbooks1);
@@ -79,3 +80,9 @@ console.log(userbooks);
 // })
 
 // console.log(userbooks);
+
+// const userbooks2 = books.filter((bk) => bk.edition >= 2004 && bk.edition <= 2011)
+// console.log(userbooks2);
+
+const userbooks3 = books.filter((bk) => bk.genre == "Science")
+console.log(userbooks3);
