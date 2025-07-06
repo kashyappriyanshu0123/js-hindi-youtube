@@ -6,8 +6,8 @@
     <title>DOM chai aur code</title>
 </head>
 <body style = "background-color: brown; color:blue" >
-    <div class = "parent">
-       <div class="day">monday</div>    
+    <div class = "parent">  //after parent div there is a line break that's also an node element(first 0 will show that's text element because we hit enter or use enter here and it's counting enter as text element)
+       <div class="day">monday</div>    // the line after this that's textnode
        <div class="day">Tuesday</div>
        <div class="day">wednesday</div>
        <div class="day">Thursday</div>
@@ -15,23 +15,27 @@
 </body>
 <script>
 const parent = document.querySelector('.parent')
-// console.log(parent);
-// console.log(parent.children);
-// console.log(parent.children[1].innerHTML);
-// for (let i = 0; i < parent.children.length; i++) {
-//     console.log(parent.children[i].innerHTML); <!--for accessing all elements in the chil div-->
+//console.log(parent);
+console.log(parent.children); 
+//console.log(parent.children[1].innerHTML);
+//console.log(parent.children[1]);
+ for (let i = 0; i < parent.children.length; i++) {
+     console.log(parent.children[i].innerHTML); //for accessing all elements in the chil div
     
-// }
-parent.children[1].style.color = "orange"
+ }
+//parent.children[1].style.color = "orange"
 //parent.children[1].style.padding = "15px"
 
-// console.log(parent.firstElementChild);
-// console.log(parent.lastElementChild); //these are basically moving us from parent to child
-
+//console.log(parent.firstElementChild);
+//console.log(parent.lastElementChild); //these are basically moving us from parent to child
+//console.log(parent.childNodes);
 const dayone = document.querySelector('.day')
 console.log(dayone);
-console.log(dayone.parentElement);
+console.log(dayone.parentElement)
+
 console.log(dayone.nextElementSibling);
-console.log("NODES:" , parent.childNodes);
+
+console.log("NODES:" , parent.childNodes); //childnodes is a complex tree structure
+
 </script>
 </html>
