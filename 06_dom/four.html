@@ -12,28 +12,30 @@
 
 </body>
 <script>
-    function addlaguage(langname)
+   function addlaguage(langname)//we are passing the name of the language
     {
+  //here  we use innerhtml so the whole traversing process will happen so for bigger proj we have to use appendchild
       const li =  document.createElement('li');
-      li.innerHTML =`${langname}`
-       document.querySelector('.language').appendChild(li)
+      li.innerHTML =`${langname}` // until here we didn't attach list item and we will attach it in unordered list
+      document.querySelector('.language').appendChild(li)
     }
     addlaguage("python")
-    addlaguage("java")
+   addlaguage("java")
+    
+   // this is a optimised approach because we are not traversing the dom tree here we created an li and inserted a textnode and the li is attached in the body
+     //function addOptiLanguage(langName){
+    //   const li = document.createElement('li');
 
-    // function addOptiLanguage(langName){
-    //     const li = document.createElement('li');
-
-    //     li.appendChild(document.createTextNode(langName))
-    //     //document.body.appendChild(li)
-    //     document.querySelector('.language').appendChild(li)
+    //    li.appendChild(document.createTextNode(langName))
+         //document.body.appendChild(li)
+     //   document.querySelector('.language').appendChild(li)
     // }
-    // addOptiLanguage('golang')
+   // addOptiLanguage('golang')
    
-//     //edit
+    //edit
     const secondLang = document.querySelector("li:nth-child(2)")
-    console.log(secondLang);
-    secondLang.innerHTML = "Mojo"
+  //  console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"
     
     //up and down both are same
 
@@ -41,13 +43,13 @@
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)
  
-//  //Edit
-//      const firstlang = document.querySelector("li:first-child")
-//      firstlang.outerHTML = "<li>typescript</li>"
+ //Edit
+   //  const firstlang = document.querySelector("li:first-child")
+    // firstlang.outerHTML = "<li>typescript</li>"
 // //remove
 
-// const lastLang = document.querySelector('li:last-child')
-//     lastLang.remove()
+//const lastLang = document.querySelector('li:last-child')
+  //  lastLang.remove()
 </script>
 
 </html>
