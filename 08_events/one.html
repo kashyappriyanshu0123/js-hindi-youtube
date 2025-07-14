@@ -29,15 +29,14 @@
     //     alert("owl clicked")
     // }
 
-    // document.getElementById('images').addEventListener('click',function(e){ // (e) is event object
+    //  document.getElementById('images').addEventListener('click',function(e){ // (e) is event object
     //    //alert('owl clicked again');
-    //  //  console.log(e);
+    //   //console.log(e);
     //    console.log("clicked inside the ul");
   
     // },false) //false is default
 
 //     document.getElementById('owl').addEventListener('click',function(e){ // (e) is event object
-//       //alert('owl clicked again');
 //        //console.log(e);
 //     console.log("owl clicked");
 //    // e.stopPropagation()
@@ -47,7 +46,7 @@
     // document.getElementById('google').addEventListener('click',function(e){
        
     //    e.preventDefault();
-    //    e.stopPropagation()
+    //   // e.stopPropagation()
     //    console.log("google clicked");
 
     //  },false)
@@ -55,15 +54,16 @@
  
 
      document.querySelector('#images').addEventListener('click' , function(e){
-      //  console.log(e);
-      // console.log(e.target);
-       // console.log(e.target.parentNode); //it will point to the parent in this case it's li
+     console.log(e.target);
+      console.log(e.target.parentNode);
+      let removeit = e.target.parentNode; //it will point to the parent in this case it's li
+       removeit.remove();
        console.log(e.target.tagName);
        if(e.target.tagName === 'IMG')
        {
         console.log(e.target.id);
         let removeit = e.target.parentNode
-        removeit.remove()
+       // removeit.remove()
        }
        
          //removeit.parentNode.removeChild(removeit)
