@@ -50,18 +50,18 @@ const obj4 = {
 // console.log(obj3);              //   { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } } ->the object is binded inside the object
 
 const obj3 = Object.assign(obj1,obj4)
-console.log(obj3);
+//console.log(obj3);
 
 //const obj3 ={...obj1, ...obj2} //spread operator
 //console.log(obj3);
 
-const users = [ //the value comes from databse
+const users = [ //the value comes from databse this is array of objects
   {
     id :1,
     email : 'ppeoei@gmail.com'
   },
   {
-    id :1,
+    id :0,
     email : 'pkas.com'
   },
   {
@@ -69,15 +69,15 @@ const users = [ //the value comes from databse
     email : 'kashyap.com'
   }
 ]
-console.log(users[1].email);  // =>  [] we are using brackets because we binded the object in the array 
-console.log(users[2].email);
+// console.log(users[0].email);  // =>  [] we are using brackets because we binded the object in the array 
+// console.log(users[2].email);
 
-console.log(tinderuser);
+// console.log(tinderuser);
 //  console.log(Object.keys(tinderuser));
 //  console.log(Object.values(tinderuser));
 //  console.log(Object.entries(tinderuser));
 
- console.log(tinderuser.hasOwnProperty('isLoggedIn'));
+//  console.log(tinderuser.hasOwnProperty('isLoggedIn'));
 
 
  //+++++++ objects destructuring and json api
@@ -88,14 +88,14 @@ console.log(tinderuser);
   courseinst: "priyanshu"
  }
  
-//  console.log(course.courseinst);
+ //console.log(course.courseinst);
 
 
- //const {courseinst}   = course
-//console.log(courseinst);
+const {courseinst}   = course    //value will get extracted from this course object { in this brackets i'll write down which value i want to extract}
+console.log(courseinst);         
 
 
- const {courseinst : inst}   = course
+ const {courseinst : inst}   = course // here we changed the courseinst name to inst i can do that i can destructor any value
 
 
  console.log(inst);
