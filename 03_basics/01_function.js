@@ -15,14 +15,14 @@
 
 
 
-// function addtwonumbers(number1,number2) {
-//     console.log(number1+number2);  // console priting dosen't mean it will return the value -> console printing mean it will only print to the consoole 
-// }
+function addtwonumbers(number1,number2) {
+    console.log(number1+number2);  
 
 // addtwonumbers(444444,12)
 
-// const res = addtwonumbers(4,5)
-// console.log("result:" , res); //result: undefined -> return type
+const res = addtwonumbers(4,5)
+console.log("result:" , res); //result: undefined -> return type why it's undefined because console priting dosen't mean the function is  returning the value -> console printing mean it will only print to the consoole 
+}
 
 
 
@@ -81,7 +81,19 @@
 // console.log(loginusermessage("priyanshu"));          //overwrite the value which is kashyap => o/p : priyanshu
 
 
+function login(username){
+    if( username === undefined)
+    { 
+        console.log("please enter a username");
+        return
 
+    }
+    //return `${username} just logged in`
+    
+}
+
+ console.log(login());
+ 
 
 
 
@@ -137,21 +149,21 @@
 
 
 
- const user = {   //user is a object
-    username: "hitesh",
-    prices: 199
-}
+//  const user = {   //user is a object
+//     username: "hitesh",
+//     prices: 199
+// }
 
-function handleObject(anyobject){    //i passed anyobject in the parameter here because  i want to be it generic , means  now i can  pass anyobject in here
-    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);   //function dosent know what will come first (username,price) it will decide with the help of method that's anyobject
-}
+// function handleObject(anyobject){    //i passed anyobject in the parameter here because  i want to be it generic , means  now i can  pass anyobject in here
+//     console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);   //function dosent know what will come first (username,price) it will decide with the help of method that's anyobject
+// }
 
 //handleObject(user)
 
-handleObject({
-    username: "hero",
-    prices: 499
-})
+// handleObject({
+//     username: "hero",
+//     prices: 499
+// })
 
 // const mynewarray = [200,400,500,1000]
 
@@ -161,23 +173,23 @@ handleObject({
 
 // console.log(returnsecondvalue(mynewarray));
 
-const myarr = [100,3,41,332]
+// const myarr = [100,3,41,332]
 
 
-function returnfirstvalue(changedarr) {
-    return changedarr[0]   //generic name means?
-}
-function returnthirdvalue(changedarr) {
-    return changedarr[2] 
-}
-function returnsecondvalue(changedarr){
-    return changedarr[1]
-}
+// function returnfirstvalue(changedarr) {
+//     return changedarr[0]   //generic name means?
+// }
+// function returnthirdvalue(changedarr) {
+//     return changedarr[2] 
+// }
+// function returnsecondvalue(changedarr){
+//     return changedarr[1]
+// }
 
 
-console.log(returnfirstvalue(myarr));
-console.log(returnthirdvalue(myarr));
-console.log(returnsecondvalue(myarr));
+// console.log(returnfirstvalue(myarr));
+// console.log(returnthirdvalue(myarr));
+// console.log(returnsecondvalue(myarr));
 
 
 
