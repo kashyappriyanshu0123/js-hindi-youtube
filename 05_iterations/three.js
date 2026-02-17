@@ -18,17 +18,18 @@ const greetings1 = ["hello world!"]
 // remove the space
 
 
-// const greetings = ["hello world!"];
-// let i = 0;
-// for (const val of greetings) {
-//     for (const char of val) {
-//         if (char === ' ') {
-//             continue; // Skip this iteration if the character is a space
-//         }
+const greetings = ["hello world!"];
+let i = 0;
+for (const val of greetings) {
+    for (const char of val) {
+        if (char === ' ') {
+            continue; // Skip this iteration if the character is a space
+        }
         
-//         console.log(`each char is ${char}`);
-//     }
-// }
+        // console.log(`each char is ${val}`);
+        // console.log(`each char is ${char}`);
+    }
+}
 
 // const greetings = ["hello world!"];
 
@@ -57,7 +58,9 @@ for(const [key,value] of map)       //USA :- United states of america
                                    //  IN :- INDIA
                                     // Fr :- France
 {
-   // console.log(key,':-',value); 
+   // console.log(key);
+    
+   console.log(key,':-',value); 
 }
 
 
