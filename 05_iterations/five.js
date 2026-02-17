@@ -3,9 +3,9 @@ const coding = ["js" , "ruby" , "python" ,'cpp' , "java"]
 //for - each loop : it's a higher order function
 //callback functions dosen't have name 
 
+// some loops are added directly in the array properties as per instance i can say for each loop
 
-
-// coding.forEach(function (val){         // val will bring each element of array as a parameter, then i can manipulate the value in the body of the function
+// coding.forEach(function (val){         // val will bring each element of array as a parameter cause this function is running inside the array, then i can manipulate the value in the body of the function and automatically this function will execute every time until it will traverse the whole array
 //   console.log(val);
 // } )
 
