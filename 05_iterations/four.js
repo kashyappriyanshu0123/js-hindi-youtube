@@ -18,10 +18,11 @@ for (const key in programming) {
 
 const map = new Map()  //its not iteratable in for-in loop it wont show any error but it wont print anything(for - in loop not working for maps)
 map.set('IN', "India")
-map.set('USA', "United States of America")
+map.set('USA', "United States of America")  // if maps aren't iteratable then how is it working with forof loop i mean what makes special forof loop to run that
 map.set('Fr', "France")
 map.set('IN', "India")
 
 for (const key in map) {
     console.log(key);       
 }
+
