@@ -15,9 +15,18 @@
 
 
 
+
 //do - while
 
+let myarr = ["flash","superman","batman"];
 
+let ind = 0;
+
+while(ind < myarr.length){
+    console.log(`my array is ${myarr[ind]}`);
+    ind++;
+
+}
 
 
 let score = 11 
