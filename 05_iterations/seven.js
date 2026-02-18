@@ -11,7 +11,7 @@ console.log(newnums2);
 
 // const newnums = mynums
 //     .map((num) => num * 10)
-//     .map((num) => num + 15)
+//     .map((num) => num + 15)  // num will bring every element from the array or i can say it will traverse the whole array and bring each element 
 //     .filter((num) => num > 20)
 // console.log(newnums);
 
