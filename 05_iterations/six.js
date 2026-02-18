@@ -1,11 +1,13 @@
-//const coding = ["js", "ruby" ,'java' ,"python",'cpp']
+// const coding = ["js", "ruby" ,'java' ,"python",'cpp']
 
-//for each dosen't return any value
+// //for each dosen't return any value
 
 // const value = coding.forEach((item) => {
-//    return item
+//   // console.log(item);
+   
+//  return item
 // } )
-// console.log(value);  //undefined
+//  console.log(value);  //undefined
 
 
 
@@ -17,10 +19,13 @@
 
 
 
-//const mynums = [1,2,3,4,5,6,7,8,9,10]
+//const mynums = [1,2,3,4,5,6,7,8,9,10];
+
+
 
 // const newnums1= mynums.filter( (num) => num > 4 )    // if i'm using filter then i will get a callback function with that , and within that i can access each value with the help of num , after that i'll give a condition whichever value satisfy that condition will get returned   
 // console.log(newnums1);
+
 
 // const newnums = mynums.filter( (num) => 
 // {      
@@ -28,8 +33,6 @@
 //   //  return num > 4                  
 // })
 // console.log(newnums);       
-
-
 
 
 const mynums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -46,7 +49,7 @@ mynums.forEach((num) => {
 
 })
 
-console.log(newnums);
+//console.log(newnums);
 
 
 const books = [
@@ -64,6 +67,9 @@ const books = [
 // const userbooks = books.filter( (bk) => bk.genre === 'History')   // the object which is coming from array we named it bk
 
 // console.log(userbooks);
+
+
+
 
 // const userbooks = books.filter((bk) => {
 //    return bk.publish >= 2000
@@ -84,5 +90,6 @@ const books = [
 // const userbooks2 = books.filter((bk) => bk.edition >= 2004 && bk.edition <= 2011)
 // console.log(userbooks2);
 
-const userbooks3 = books.filter((bk) => bk.genre == "Science")
-console.log(userbooks3);
+// const userbooks3 = books.filter((bk) => bk.genre == "Science")
+// console.log(userbooks3);
+
