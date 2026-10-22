@@ -9,6 +9,8 @@
 const outsidetemp = null;
 let usermail = undefined;
 
+// console.log(typeof outsidetemp);
+
 //console.log(usermail);
 
 //Symbol 
@@ -32,7 +34,10 @@ const myfunction = function()
 {
     console.log("helloworld");
 }
-console.log(typeof myfunction); // output :function but in actually it calls as obj function
+ console.log(typeof myfunction); // output :function but in actually it calls as obj function
+
+
+//console.log(myfunction());
 
 const heros = ["shaktiman","krrish","flying jat" ];
 
@@ -56,32 +61,32 @@ console.log(jaipur());
 
 //stack used in primitive datatypes and heap memory used in non-primitive datatypes
 
-let myyoutubename = "hiteschoudhary.com" //it will go to stack
+// let myyoutubename = "hiteschoudhary.com" //it will go to stack
 
-let anothername = myyoutubename
-anothername = "chaiaurcode"
+// let anothername = myyoutubename
+// anothername = "chaiaurcode"
 
-console.log(myyoutubename); //hiteschoudhary.com
-console.log(anothername);   //chaiaurcode
+// console.log(myyoutubename); //hiteschoudhary.com
+// console.log(anothername);   //chaiaurcode
 
-let userone = {
-    email: "priyanshukashyap024@gmail.com", // object will be allocated in heap
-    upi : "user@ybl",
-    password:123
+// let userone = {
+//     email: "priyanshukashyap024@gmail.com", // object will be allocated in heap
+//     upi : "user@ybl",
+//     password:123
     
-}
+// }
 
 
-console.log(userone);
-let usertwo = userone
+// console.log(userone);
+// let usertwo = userone
 
-usertwo.email = "hitesh@gmail.com"
-usertwo.password = 456
+// usertwo.email = "hitesh@gmail.com"
+// usertwo.password = 456
 
-console.log(userone.email);
-console.log(usertwo.email);
-console.log(usertwo.password);
+// console.log(userone.email);
+// console.log(usertwo.email);
+// console.log(usertwo.password);
 
 
-let age = null
-console.log(typeof age);
+// let age = null
+// console.log(typeof age);
